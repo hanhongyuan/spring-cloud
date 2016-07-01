@@ -33,7 +33,7 @@ public class UiApplication extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.logout().and().antMatcher("/**").authorizeRequests()
-                .antMatchers("/index.html", "/home.html", "/", "/login").permitAll()
+                .antMatchers("/index.html", "/home.html", "/", "/login", "/api-docs").permitAll()
                 .anyRequest().authenticated().and().csrf()
                 .csrfTokenRepository(csrfTokenRepository()).and()
                 .addFilterAfter(csrfHeaderFilter(), CsrfFilter.class);
@@ -69,4 +69,3 @@ public class UiApplication extends WebSecurityConfigurerAdapter {
     }
 
 }
-
