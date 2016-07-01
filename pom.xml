@@ -13,6 +13,8 @@
         <module>config-server</module>
         <module>eureka-server</module>
         <module>resource-service</module>
+        <module>zipkin-service</module>
+        <module>hystrix-dashboard</module>
         <module>ui</module>
     </modules>
 
