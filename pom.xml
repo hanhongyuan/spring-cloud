@@ -15,7 +15,7 @@
         <module>resource-service</module>
         <module>zipkin-service</module>
         <module>hystrix-dashboard</module>
-        <module>ui</module>
+        <module>gateway</module>
     </modules>
 
 </project>
